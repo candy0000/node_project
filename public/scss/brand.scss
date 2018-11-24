@@ -1,0 +1,10 @@
+.ca-main2{
+    flex:1;
+    display: flex;
+    background:url(/images/pic04.jpg) no-repeat;
+    background-size: cover;
+    .body{
+        flex:1;
+        padding: 0 20px;
+    }
+}

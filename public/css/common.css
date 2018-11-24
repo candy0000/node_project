@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/* 项目都能使用上的css样式 */
+html, body {
+  height: 100%; }
+
+body {
+  background: pink; }
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: url(/images/pic01.jpg) no-repeat;
+  background-size: cover; }
+
+.ca-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  border-bottom: 1px solid #000; }
+  .ca-head .logo {
+    text-decoration: none;
+    font-size: 24px; }
+  .ca-head .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .ca-head .right p {
+      font-size: 26px; }
+
+.ca-foot {
+  height: 50px;
+  border-top: 1px solid #000; }
+
+.ca-menu {
+  width: 250px;
+  height: 100%;
+  overflow-y: auto;
+  border-right: solid 1px red;
+  text-align: center; }
+  .ca-menu li {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #000; }
+    .ca-menu li a {
+      color: #000;
+      font-size: 20px;
+      text-decoration: none; }
+
+.ca-main {
+  flex: 1;
+  display: flex;
+  background: url(/images/pic02.jpg) no-repeat;
+  background-size: cover; }
+  .ca-main .body {
+    flex: 1;
+    padding: 0 20px; }
+
+.ca-main1 {
+  flex: 1;
+  display: flex;
+  background: url(/images/pic03.jpg) no-repeat;
+  background-size: cover; }
+  .ca-main1 .body {
+    flex: 1;
+    padding: 0 20px; }
+
+.table-hover > tbody > tr:hover {
+  background: orchid; }
+
+.pagination {
+  float: right; }
+
+.form-control {
+  width: 300px;
+  display: inline-block; }
+
+.search-bar {
+  margin: 10px 0; }
+
+/*# sourceMappingURL=common.css.map */

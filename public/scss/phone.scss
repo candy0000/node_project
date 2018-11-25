@@ -3,8 +3,26 @@
     display: flex;
     background:url(/images/pic05.jpg)no-repeat;
     background-size: cover;
+    overflow-y: auto;
     .body{
         flex:1;
         padding: 0 20px;
+        th{
+            text-align: center;
+            line-height: 100px;
+        }
+        tr{
+            height: 100px;
+            
+            td{
+                border-bottom: 1px solid #000;
+                text-align: center;
+                line-height: 100px;
+                img{
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
     }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +12,54 @@
   <link rel="stylesheet" href="/css/index.css">
   <link rel="stylesheet" href="/css/phone.css">
 </head>
+
 <body>
   <div class="container">
-      <%- include('./common/head') %>
+    <%- include('./common/head') %>
     <div class="ca-main3">
       <%- include('./common/menu') %>
       <div class="body">
-        我是手机管理
+        <table class="table">
+          <thead>
+            <tr>
+              <th>序号</th>
+              <th>品牌</th>
+              <th>手机图片</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>华为</td>
+              <td><img src="/images/phone01.jpg" alt=""></td>
+              <td>修改</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>联想</td>
+              <td><img src="/images/phone02.jpg" alt=""></td>
+              <td>修改</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>三星</td>
+              <td><img src="/images/phone03.jpg" alt=""></td>
+              <td>修改</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>苹果</td>
+              <td><img src="/images/phone04.jpg" alt=""></td>
+              <td>修改</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
 
     <%- include('./common/foot') %>
   </div>
 </body>
+
 </html>

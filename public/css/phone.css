@@ -2,9 +2,22 @@
   flex: 1;
   display: flex;
   background: url(/images/pic05.jpg) no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  overflow-y: auto; }
   .ca-main3 .body {
     flex: 1;
     padding: 0 20px; }
+    .ca-main3 .body th {
+      text-align: center;
+      line-height: 100px; }
+    .ca-main3 .body tr {
+      height: 100px; }
+      .ca-main3 .body tr td {
+        border-bottom: 1px solid #000;
+        text-align: center;
+        line-height: 100px; }
+        .ca-main3 .body tr td img {
+          width: 80px;
+          height: 80px; }
 
 /*# sourceMappingURL=phone.css.map */

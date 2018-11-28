@@ -29,44 +29,24 @@
                             <th>序号</th>
                             <th>用户名</th>
                             <th>用户昵称</th>
-                            <th>手机号码</th>
-                            <th>性别</th>
                             <th>年龄</th>
+                            <th>性别</th>
                             <th>是否管理员</th>
                             <th>操作</th>
                         </tr>
                     </thead>
                     <tbody>
+                        <% for(var i=0;i<list.length;i++){%>
                         <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>111111</td>
-                            <td>女</td>
-                            <td>18</td>
-                            <td>是</td>
-                            <td>修改</td>
+                            <th scope="row"><%= i+1 %></th>
+                            <td><%= list[i].username %></td>
+                            <td><%= list[i].nickname %></td>
+                            <td><%= list[i].sex %></td>
+                            <td><%= list[i].age %></td>
+                            <td><%= list[i].isAdmin %></td>
+                            <td><a>修改</a></td>
                         </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>111111</td>
-                            <td>女</td>
-                            <td>18</td>
-                            <td>是</td>
-                            <td>修改</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>111111</td>
-                            <td>女</td>
-                            <td>18</td>
-                            <td>是</td>
-                            <td>修改</td>
-                        </tr>
+                        <% }%>
                     </tbody>
                 </table>
                 <nav aria-label="Page navigation">

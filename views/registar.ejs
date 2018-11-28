@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +11,20 @@
     <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/registar.css">
 </head>
+
 <body>
     <h2>注册页面</h2>
     <div class="main">
-        <form action="">
-            <p>请输入用户名：</p><input type="text"><br>
-            <p>请输入密码：</p><input type="password"><br>
-            <a href="/login"><input class="btn btn-lg disabled" type="button" value="注册"></a>
+        <form action="/users/registar.html" method="post">
+            <p>请输入用户名：</p><input type="text" name="username" placeholder="请输入用户名"><br>
+            <p>请输入密码：</p><input type="password" name="password" placeholder="请输入密码"><br>
+            <p>请确认密码：</p><input type="password" name="pwd" placeholder="请确认密码"><br>
+            <p>请输入手机号码：</p><input type="text" name="iphone" placeholder="请输入手机号码"><br>
+            <!-- <a href="/login"><input class="btn btn-lg disabled" type="button" value="注册"></a>            -->
+            <input class="btn btn-lg disabled" type="submit" value="注册">
 
-            
         </form>
     </div>
 </body>
+
 </html>

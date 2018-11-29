@@ -15,10 +15,10 @@
 <body>
     <h2>登录页面</h2>
     <div class="main">
-        <form action="">
-            <p>请输入用户名：</p><input type="text"><br>
-            <p>请输入密码：</p><input type="password"><br>
-            <a href="/index.html"><input class="btn btn-lg disabled" type="button" value="登录"></a>
+        <form action="/users/login" method="POST">
+            <p>请输入用户名：</p><input type="text" name="name"><br>
+            <p>请输入密码：</p><input type="password" name="pwd"><br>
+           <input class="btn btn-lg disabled" type="submit" value="登录">
 
 
         </form>

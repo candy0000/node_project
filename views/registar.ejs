@@ -15,13 +15,19 @@
 <body>
     <h2>注册页面</h2>
     <div class="main">
-        <form action="/users/registar.html" method="post">
-            <p>请输入用户名：</p><input type="text" name="username" placeholder="请输入用户名"><br>
+        <form action="/users/registar" method="post">
+            <p>请输入用户名：</p><input type="text" name="name" placeholder="请输入用户名"><br>
             <p>请输入密码：</p><input type="password" name="password" placeholder="请输入密码"><br>
             <p>请确认密码：</p><input type="password" name="pwd" placeholder="请确认密码"><br>
+            <p>请输入性别：</p><input type="text" name="sex" placeholder="请输入性别"><br>
+            <p>请输入年龄：</p><input type="text" name="age" placeholder="请输入年龄"><br>
+            <p>请输入昵称：</p><input type="text" name="nickname" placeholder="请输入昵称"><br>
             <p>请输入手机号码：</p><input type="text" name="iphone" placeholder="请输入手机号码"><br>
             <!-- <a href="/login"><input class="btn btn-lg disabled" type="button" value="注册"></a>            -->
+            <p>管理员：</p>yes:<input type="radio" name="isAdmin" value="yes" checked>  no:<input type="radio" value="no" name="isAdmin" > <br>
             <input class="btn btn-lg disabled" type="submit" value="注册">
+
+            <br><a href="/login.html">已有账号，立即登录</a>
 
         </form>
     </div>

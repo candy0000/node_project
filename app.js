@@ -4,8 +4,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var bodyParser = require('body-parser')
-
-
+var ignoreRouter=require('./config/ignoreRouter');
+console.log(ignoreRouter);
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -24,6 +24,29 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(function (req,res,next) {
+  // req.cookies('username')
+  // console.log(req.cookies.nickname);
+  // console.log(req.path);
+  //排出 登录和注册
+  console.log(ignoreRouter.indexOf(req.url));
+  console.log(req.url);
+  if(ignoreRouter.indexOf(req.url)>-1){
+     next();
+     console.log(1);
+     return;
+  }
+  var nickname=req.cookies.nickname;
+  if(nickname){
+   next();
+  }else{
+    //如果nickname不存在，就跳转到登录页面
+    console.log('-----------------------------')
+    res.redirect('/login.html');
+  }
+
+});
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
